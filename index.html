@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <title>Petition – 70 Jahre Schweiz–Sri Lanka</title>
+  <meta charset="utf-8" />
+  <title>petition – 70 jahre schweiz–sri lanka</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <style>
     body {
       max-width: 900px;
       margin: 40px auto;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: system-ui, -apple-system, blink_mac_system_font, "segoe ui", sans-serif;
       line-height: 1.65;
       padding: 0 16px;
       color: #111;
@@ -81,7 +81,7 @@
       margin: 6px 0;
     }
 
-    /* Anchor links */
+    /* anchor links */
     .anchor-link {
       font-size: 0.9em;
       margin-left: 6px;
@@ -89,7 +89,7 @@
       color: #555;
     }
 
-    /* Floating Print Button */
+    /* floating print button */
     #print-btn {
       position: fixed;
       bottom: 20px;
@@ -108,7 +108,7 @@
       background: #333;
     }
 
-    /* Print Styles */
+    /* print styles */
     @media print {
       body {
         margin: 0;
@@ -129,141 +129,212 @@
   </style>
 
   <script>
-    function showLang(lang) {
-      document.querySelectorAll('.letter').forEach(el => {
-        el.classList.remove('active');
+    function show_lang(lang) {
+      document.query_selector_all('.letter').for_each(el => {
+        el.class_list.remove('active');
       });
-      const section = document.getElementById(lang);
-      section.classList.add('active');
-      document.documentElement.lang = lang;
-      section.scrollIntoView({ behavior: 'smooth' });
+      const section = document.get_element_by_id(lang);
+      section.class_list.add('active');
+      document.document_element.lang = lang;
+      section.scroll_into_view({ behavior: 'smooth' });
     }
 
-    window.addEventListener('DOMContentLoaded', () => {
-      const hashLang = window.location.hash.replace('#', '');
-      if (['de', 'en', 'ta'].includes(hashLang)) {
-        showLang(hashLang);
+    window.add_event_listener('dom_content_loaded', () => {
+      const hash_lang = window.location.hash.replace('#', '');
+      if (['de', 'fr', 'en', 'ta'].includes(hash_lang)) {
+        show_lang(hash_lang);
       }
     });
 
-    function printActive() {
-      const active = document.querySelector('.letter.active');
+    function print_active() {
+      const active = document.query_selector('.letter.active');
       if (!active) return;
-      const printContents = active.innerHTML;
-      const originalContents = document.body.innerHTML;
+      const print_contents = active.inner_html;
+      const original_contents = document.body.inner_html;
 
-      document.body.innerHTML = printContents;
+      document.body.inner_html = print_contents;
       window.print();
-      document.body.innerHTML = originalContents;
+      document.body.inner_html = original_contents;
       location.reload();
     }
   </script>
 </head>
 <body>
 
-<!-- Language Switcher -->
+<!-- language switcher -->
 <div class="lang-switch">
-  <button onclick="showLang('de')">Deutsch</button>
-  <button onclick="showLang('en')">English</button>
-  <button onclick="showLang('ta')">தமிழ்</button>
+  <button onclick="show_lang('de')">deutsch</button>
+  <button onclick="show_lang('fr')">française</button>
+  <button onclick="show_lang('en')">english</button>
+  <button onclick="show_lang('ta')">தமிழ்</button>
 </div>
 
-<!-- Petition Button -->
+<!-- petition button -->
 <div class="petition-box">
-  <strong>Petition</strong>
+  <strong>petition</strong>
   <br />
   <a href="https://act.campax.org/petitions/70-jahre-schweiz-sri-lanka-der-bundesrat-muss-gerechtigkeit-und-eine-politische-losung-fordern" target="_blank" rel="noopener">
-    Petition unterschreiben / Sign the petition
+    petition unterschreiben / sign the petition
   </a>
 </div>
 
 <!-- ===================== -->
-<!-- German -->
+<!-- german -->
 <!-- ===================== -->
 <div id="de" class="letter active" lang="de">
-<h1>70 Jahre diplomatische Beziehungen Schweiz – Sri Lanka <a class="anchor-link" href="#de">#</a></h1>
-<h2>Der Bundesrat muss sich für Gerechtigkeit und eine politische Lösung einsetzen</h2>
-<p class="meta">Petition – 14. Januar 2026</p>
+<h1>70 jahre diplomatische beziehungen schweiz – sri lanka <a class="anchor-link" href="#de">#</a></h1>
+<h2>der bundesrat muss sich für gerechtigkeit und eine politische lösung einsetzen</h2>
+<p class="meta">petition – 14. januar 2026</p>
 
-<p>Sehr geehrter Herr Bundesrat Cassis,<br>
-Sehr geehrte Damen und Herren Bundesrätinnen und Bundesräte,<br>
-Sehr geehrte Damen und Herren National- und Ständerätinnen und -räte,<br>
-Sehr geehrte Medienschaffende,<br>
-Sehr geehrte Damen und Herren,</p>
+<p>sehr geehrter herr bundesrat cassis,<br>
+sehr geehrte damen und herren bundesrätinnen und bundesräte,<br>
+sehr geehrte damen und herren national- und ständerätinnen und -räte,<br>
+sehr geehrte medienschaffende,<br>
+sehr geehrte damen und herren,</p>
 
-<p>Im Jahre 2026 feiern die Schweiz und Sri Lanka das 70-jährige Bestehen ihrer diplomatischen Beziehungen. Seither engagiert sich die Schweiz unter anderem in den Bereichen Friedensförderung, Menschenrechte und in der Unterstützung von Reform- und Versöhnungsprozessen. Im Jahre 2016 unterzeichnete die Schweiz zudem ein Migrationsabkommen mit Sri Lanka, um die Rückkehr von abgewiesenen Asylsuchenden und die irreguläre Migration zu regeln. Vor diesem Hintergrund fällt der angekündigte Besuch von Bundesrat und Vorsteher des Eidgenössischen Departements für auswärtige Angelegenheiten, Ignazio Cassis, im März 2026 (8. bis 9. März 2026) in eine politisch und historisch sensible Phase.</p>
+<p>im jahre 2026 feiern die schweiz und sri lanka das 70-jährige bestehen ihrer diplomatischen beziehungen. seither engagiert sich die schweiz unter anderem in den bereichen friedensförderung, menschenrechte und in der unterstützung von reform- und versöhnungsprozessen. im jahre 2016 unterzeichnete die schweiz zudem ein migrationsabkommen mit sri lanka, um die rückkehr von abgewiesenen asylsuchenden und die irreguläre migration zu regeln. vor diesem hintergrund fällt der angekündigte besuch von bundesrat und vorsteher des eidgenössischen departements für auswärtige angelegenheiten, ignazio cassis, im märz 2026 (8. bis 9. märz 2026) in eine politisch und historisch sensible phase.</p>
 
-<p>Trotz des langjährigen Engagements der Schweiz ist die tamilische Diaspora äusserst besorgt über die seit jahrzehntelang anhaltende Gewalt, strukturelle Diskriminierung und Unterdrückung der sri-lankischen Regierung gegenüber der tamilischen Bevölkerung im Norden und Osten des Landes. Bereits im gleichen Jahr 1956, als die bilateralen Beziehungen zwischen der Schweiz und Sri Lanka aufgenommen wurden, fand auch das erste von mehreren anti-tamilischen Pogromen durch die singhalesische Mehrheitsbevölkerung statt. Höhepunkt war der sogenannte “Black July” im Jahre 1983, kurz vor Ausbruch des Krieges, welcher bis 2009 andauerte. In der Schlussphase 2009 wurden gemäss UN mindestens 70'000 tamilische Zivilist:innen getötet, viele von ihnen in sogenannten «No Fire Zones», die gezielt bombardiert wurden (United Nations, 2011). Es wurden zudem Angriffe auf Spitäler, Schulen und Flüchtlingslager im Nordosten des Landes dokumentiert. Zivilist:innen verschwanden spurlos, viele wurden willkürlich hingerichtet und Frauen wurden Opfer sexualisierter Gewalt (OHCHR, 2025). Die kürzliche Entdeckung von weiteren Massengräbern, wie u.a. das in Chemmani , belegen das Ausmass dieser Verbrechen. Tamilische Stimmen und Menschenrechtsorganisationen stufen diese Handlungen der sri-lankischen Regierung als Kriegsverbrechen, Verbrechen gegen die Menschlichkeit und Völkermord ein (PEARL, 2024). In Kanada und anderen Ländern gedenken deshalb Regierungen und politische Parteien den 18. Mai als «Tamil Genocide Remembrance Day».</p>
+<p>trotz des langjährigen engagements der schweiz ist die tamilische diaspora äusserst besorgt über die seit jahrzehntelang anhaltende gewalt, strukturelle diskriminierung und unterdrückung der sri-lankischen regierung gegenüber der tamilischen bevölkerung im norden und osten des landes. bereits im gleichen jahr 1956, als die bilateralen beziehungen zwischen der schweiz und sri lanka aufgenommen wurden, fand auch das erste von mehreren anti-tamilischen pogromen durch die singhalesische mehrheitsbevölkerung statt. höhepunkt war der sogenannte “black july” im jahre 1983, kurz vor ausbruch des krieges, welcher bis 2009 andauerte. in der schlussphase 2009 wurden gemäss un mindestens 70'000 tamilische zivilist:innen getötet, viele von ihnen in sogenannten «no fire zones», die gezielt bombardiert wurden (united nations, 2011). es wurden zudem angriffe auf spitäler, schulen und flüchtlingslager im nordosten des landes dokumentiert. zivilist:innen verschwanden spurlos, viele wurden willkürlich hingerichtet und frauen wurden opfer sexualisierter gewalt (ohchr, 2025). die kürzliche entdeckung von weiteren massengräbern, wie u.a. das in chemmani , belegen das ausmass dieser verbrechen. tamilische stimmen und menschenrechtsorganisationen stufen diese handlungen der sri-lankischen regierung als kriegsverbrechen, verbrechen gegen die menschlichkeit und völkermord ein (pearl, 2024). in kanada und anderen ländern gedenken deshalb regierungen und politische parteien den 18. mai als «tamil genocide remembrance day».</p>
 
-<p>Auch nach dem offiziellen Ende des bewaffneten Konflikts im Jahre 2009 hat sich die Menschenrechtslage für die Tamil:innen nicht grundlegend verbessert. Willkürliche Verhaftungen erfolgen weiterhin unter dem repressiven Gesetz Prevention of Terrorism Act (PTA). Trotz dieser Einschätzungen wurde bis heute keine umfassende internationale Aufarbeitung eingeleitet. Denn die sri-lankische Regierung verweigert bis heute unabhängige internationale Untersuchungen und betreibt weiterhin die fortgeschrittene “Sinhalisierung” tamilischer Gebiete (PEARL, 2026). Sie verweigert zudem konsequent jede unabhängige Untersuchung, wie z.B. das aktuelle Mandat des UNO-Hochkommissariats für Menschenrechte, das Beweismittel zu den Verbrechen in Sri Lanka für potenzielle Gerichtsverfahren sichern und den UN Mitgliedstaaten zur Verfügung stellen soll. Damit verletzt sie grundlegende Prinzipien der internationalen Rechenschaftspflicht und des Völkerstrafrechts. Deshalb kämpfen bis heute Tamil:innen unter Lebensgefahr für eine Aufarbeitung der Verbrechen durch den sri-lankischen Staat und für ihr Recht auf Selbstbestimmung.</p>
+<p>auch nach dem offiziellen ende des bewaffneten konflikts im jahre 2009 hat sich die menschenrechtslage für die tamil:innen nicht grundlegend verbessert. willkürliche verhaftungen erfolgen weiterhin unter dem repressiven gesetz prevention of terrorism act (pta). trotz dieser einschätzungen wurde bis heute keine umfassende internationale aufarbeitung eingeleitet. denn die sri-lankische regierung verweigert bis heute unabhängige internationale untersuchungen und betreibt weiterhin die fortgeschrittene “sinhalisierung” tamilischer gebiete (pearl, 2026). sie verweigert zudem konsequent jede unabhängige untersuchung, wie z.b. das aktuelle mandat des uno-hochkommissariats für menschenrechte, das beweismittel zu den verbrechen in sri lanka für potenzielle gerichtsverfahren sichern und den un mitgliedstaaten zur verfügung stellen soll. damit verletzt sie grundlegende prinzipien der internationalen rechenschaftspflicht und des völkerstrafrechts. deshalb kämpfen bis heute tamil:innen unter lebensgefahr für eine aufarbeitung der verbrechen durch den sri-lankischen staat und für ihr recht auf selbstbestimmung.</p>
 
-<p>Forderungen der tamilischen Diaspora an Bundesrat Ignazio Cassis</p>
-<p>Die Schweiz gehört seit den 80er Jahren nach Kanada, Deutschland und Grossbritannien zu den wichtigsten Aufnahmeländern von tamilischen Geflüchteten aus Sri Lanka. Heute zählt die tamilische Diaspora gemäss Schätzungen des Staatssekretariats für Migration (SEM) mehr als 80’000 Mitglieder und umfasst mittlerweile die dritte Generation. Diese Gemeinschaft gehört zur Schweizer Bevölkerung und trägt seit über 40 Jahren in vielfältiger Weise zum gesellschaftlichen, politischen, wirtschaftlichen und kulturellen Leben in der Schweiz bei.</p>
+<p>forderungen der tamilischen diaspora an bundesrat ignazio cassis</p>
+<p>die schweiz gehört seit den 80er jahren nach kanada, deutschland und grossbritannien zu den wichtigsten aufnahmeländern von tamilischen geflüchteten aus sri lanka. heute zählt die tamilische diaspora gemäss schätzungen des staatssekretariats für migration (sem) mehr als 80’000 mitglieder und umfasst mittlerweile die dritte generation. diese gemeinschaft gehört zur schweizer bevölkerung und trägt seit über 40 jahren in vielfältiger weise zum gesellschaftlichen, politischen, wirtschaftlichen und kulturellen leben in der schweiz bei.</p>
 
-<p>Die Schweiz engagiert sich seit Jahren in Friedensförderung, Sicherung der Menschenrechte, Versöhnung und Dialogprozesse in Sri Lanka, insbesondere im Norden und Osten. Damit gehört dieses Engagement der Schweiz  zum Kernelement der jahrelang gepflegten bilateralen Beziehungen.</p>
+<p>die schweiz engagiert sich seit jahren in friedensförderung, sicherung der menschenrechte, versöhnung und dialogprozesse in sri lanka, insbesondere im norden und osten. damit gehört dieses engagement der schweiz  zum kernelement der jahrelang gepflegten bilateralen beziehungen.</p>
 
-<p>Vor diesem Hintergrund appellieren die Unterzeichnenden und Angehörigen der zweiten Generation der Diaspora an Bundesrat Ignazio Cassis, der menschenrechtlichen Verantwortung und der humanitären Tradition der Schweiz gerecht zu werden und sich weiterhin entschlossen für Gerechtigkeit, Rechenschaftspflicht und den Schutz der betroffenen Tamil:innen im Norden und Osten von Sri Lanka einzusetzen.</p>
+<p>vor diesem hintergrund appellieren die unterzeichnenden und angehörigen der zweiten generation der diaspora an bundesrat ignazio cassis, der menschenrechtlichen verantwortung und der humanitären tradition der schweiz gerecht zu werden und sich weiterhin entschlossen für gerechtigkeit, rechenschaftspflicht und den schutz der betroffenen tamil:innen im norden und osten von sri lanka einzusetzen.</p>
 
-<p>Wir fordern Bundesrat Ignazio Cassis deshalb auf, während seines Besuchs in Sri Lanka im März 2026 ebenso den Norden und Osten des Landes aufzusuchen. Diese Regionen sind auch nach dem Ende des Krieges weiterhin am stärksten betroffen.</p>
+<p>wir fordern bundesrat ignazio cassis deshalb auf, während seines besuchs in sri lanka im märz 2026 ebenso den norden und osten des landes aufzusuchen. diese regionen sind auch nach dem ende des krieges weiterhin am stärksten betroffen.</p>
 
-<p>Konkrete Forderungen:</p>
+<p>konkrete forderungen:</p>
 <ul>
-  <li>Wir bitten eindringlich um einen Besuch im Norden und Osten von Sri Lanka, um symbolisch die Solidarität mit der tamilischen Opfergemeinschaft zum Ausdruck zu bringen. Ein Besuch in Jaffna könnte einen Besuch des Chemmani-Massengrabs beinhalten. Ein Besuch in Mullaitivu könnte einen Besuch des Mullivaikkal-Strandes beinhalten, dem Schauplatz der letzten Phase des Krieges. Ein Treffen mit Vertreter:innen der gewaltsam Verschwundenen während Ihres Besuchs im Norden und Osten würde dazu beitragen, das anhaltende Ausmass des Leids und der Not zu verdeutlichen.</li>
-  <li>Wir fordern Sie zudem dazu auf, in Ihren öffentlichen Äusserungen während Ihres Aufenthalts in Sri Lanka das Leid und den Schmerz der tamilischen Opfergemeinschaft anzuerkennen. Wir bitten Sie eindringlich, die sri-lankische Regierung aufzufordern, unabhängige internationale Untersuchungen und einen transparenten Prozess der Rechenschaftspflicht (Accountability) für Verbrechen während und nach dem Krieg zuzulassen, unter anderem durch den UN-Menschenrechtsrat und durch internationale Gerichtsprozesse. Die Schweiz soll sich damit aktiv für die Zulassung unabhängiger internationaler Untersuchungsmechanismen einsetzen.</li>
-  <li>Die tamilische Diaspora in der Schweiz muss konstruktiv einbezogen werden, um Prozesse der Wahrheitsfindung, Rechenschaftspflicht und Gerechtigkeit in Bezug auf Menschenrechtsverletzungen und Verbrechen während und nach dem Krieg in Sri Lanka sowie die Suche nach einer dauerhaften politischen Lösung zu unterstützen, die das Selbstbestimmungsrecht der tamilischen Nation anerkennt.</li>
+  <li>wir bitten eindringlich um einen besuch im norden und osten von sri lanka, um symbolisch die solidarität mit der tamilischen opfergemeinschaft zum ausdruck zu bringen. ein besuch in jaffna könnte einen besuch des chemmani-massengrabs beinhalten. ein besuch in mullaitivu könnte einen besuch des mullivaikkal-strandes beinhalten, dem schauplatz der letzten phase des krieges. ein treffen mit vertreter:innen der gewaltsam verschwundenen während ihres besuchs im norden und osten würde dazu beitragen, das anhaltende ausmass des leids und der not zu verdeutlichen.</li>
+  <li>wir fordern sie zudem dazu auf, in ihren öffentlichen äusserungen während ihres aufenthalts in sri lanka das leid und den schmerz der tamilischen opfergemeinschaft anzuerkennen. wir bitten sie eindringlich, die sri-lankische regierung aufzufordern, unabhängige internationale untersuchungen und einen transparenten prozess der rechenschaftspflicht (accountability) für verbrechen während und nach dem krieg zuzulassen, unter anderem durch den un-menschenrechtsrat und durch internationale gerichtsprozesse. die schweiz soll sich damit aktiv für die zulassung unabhängiger internationaler untersuchungsmechanismen einsetzen.</li>
+  <li>die tamilische diaspora in der schweiz muss konstruktiv einbezogen werden, um prozesse der wahrheitsfindung, rechenschaftspflicht und gerechtigkeit in bezug auf menschenrechtsverletzungen und verbrechen während und nach dem krieg in sri lanka sowie die suche nach einer dauerhaften politischen lösung zu unterstützen, die das selbstbestimmungsrecht der tamilischen nation anerkennt.</li>
 </ul>
 
-<p>Vor diesem Hintergrund appellieren die Unterzeichnenden an Bundesrat Ignazio Cassis, den bevorstehenden Besuch in Sri Lanka aktiv zu nutzen, um die Prinzipien des Völkerrechts, der Menschenrechte und der nachhaltigen Friedensförderung konsequent zu vertreten.</p>
+<p>vor diesem hintergrund appellieren die unterzeichnenden an bundesrat ignazio cassis, den bevorstehenden besuch in sri lanka aktiv zu nutzen, um die prinzipien des völkerrechts, der menschenrechte und der nachhaltigen friedensförderung konsequent zu vertreten.</p>
 
-<p><strong>Mit vorzüglicher Hochachtung<br>
-Die tamilische Diaspora in der Schweiz, sowie weitere Unterstützende</strong></p>
+<p><strong>mit vorzüglicher hochachtung<br>
+die tamilische diaspora in der schweiz, sowie weitere unterstützende</strong></p>
 </div>
 
 </div>
 
 <!-- ===================== -->
-<!-- English -->
+<!-- french -->
+<!-- ===================== -->
+<div id="fr" class="letter" lang="fr">
+  <h1>Suisse – Sri Lanka : 70 ans de relations diplomatiques<a class="anchor-link" href="#fr">#</a></h1>
+  <h2>Le Conseil fédéral doit s’engager en faveur de la justice et d’une solution politique</h2>
+  <p class="meta">petition – 14 january 2026</p>
+  
+  <p>Mesdames et Messieurs les Conseillers fédéraux,<br>
+  Mesdames et Messieurs les Conseillers nationaux,<br>
+  Mesdames et Messieurs les Conseillers aux États,<br>
+  Mesdames et Messieurs les représentants des médias,<br>
+  Madame, Monsieur,</p>
+  
+  <p>
+    En 2026, la Suisse et le Sri Lanka fêteront 70 ans de relations diplomatiques. Dans le cadre de ces relations, la Suisse s’engage activement pour le maintien de la paix et les droits de l’homme et elle soutient les processus de réforme et de réconciliation. En 2016, elle a conclu avec le Sri Lanka un accord de coopération migratoire réglant les modalités de renvoi des requérants d’asile déboutés et la migration irrégulière. La visite annoncée du chef du Département fédéral des affaires étrangères, le conseiller fédéral Ignazio Cassis, qui aura lieu les 8 et 9 mars 2026, intervient dans une phase politiquement et historiquement sensible.
+  </p>
+  
+  <p>
+    Bien que la Suisse se soit engagée depuis des années au Sri Lanka, la diaspora tamoule de Suisse est fortement préoccupée par la violence latente, les discriminations structurelles et la répression exercées depuis des décennies par le gouvernement sri-lankais à l’encontre de la population tamoule dans le nord et l’est du pays. Déjà en 1956, au moment même de l’établissement des relations bilatérales entre la Suisse et le Sri Lanka, le premier d’une longue série de pogroms était perpétré contre la population tamoule par la population cinghalaise majoritaire dans le pays, les violences atteignant leur point culminant en 1983 avec le « Juillet noir », peu avant l’éclatement du conflit qui allait durer jusqu’en 2009. La dernière offensive menée en 2009 a fait, selon l’Organisation des Nations unies, au moins 70 000 morts parmi les civils tamouls, dont un grand nombre dans les zones d’interdiction de tir, qui avaient été la cible de bombardements (ONU, rapport du panel consultatif d’experts, 31.03.2011). Des attaques avaient en outre été perpétrées contre des hôpitaux, des écoles et des camps de réfugiés au nord-est du pays. Des civils avaient disparu sans laisser de traces, nombre de personnes avaient été exécutées arbitrairement et les femmes avaient été victimes de violences sexuelles (HCDH, 2025). La récente découverte de nouveaux charniers, dont entre autres celui de Chemmani, témoigne de l’ampleur des crimes commis. Des voix tamoules ainsi que celles d’organisations de défense des droits de l’homme s’élèvent pour qualifier les exactions commises par le gouvernement sri-lankais de crimes de guerre, crimes contre l’humanité et génocide (PEARL, 2024). Au Canada et dans d’autres pays, les gouvernements et des partis politiques rendent d’ailleurs hommage aux victimes, le 18 mai, lors de la Journée de commémoration du génocide tamoul.
+  </p>  
+  
+  <p>
+    Bien que le conflit armé ait officiellement pris fin en 2009, la situation des populations tamoules ne s’est pas fondamentalement améliorée du point de vue des droits de l’homme. Les Tamouls sont toujours la cible d’arrestations arbitraires opérées sous couvert de la loi draconienne sur la prévention du terrorisme (PTA). Malgré les constatations mentionnées plus haut, aucune analyse approfondie de ce conflit et de ses conséquences n’a pu être réalisée au niveau international : en effet, le gouvernement sri-lankais s’oppose jusqu’à présent à toute enquête internationale indépendante et poursuit la « cinghalisation » des régions tamoules. Il rejette systématiquement toute enquête indépendante, comme celle dont a été chargé le Haut-Commissariat des Nations unies aux droits de l’homme, qui doit rassembler des preuves des crimes commis au Sri Lanka en vue d’éventuelles procédures pénales et les mettre à la disposition des États membres de l’ONU. Ce faisant, le gouvernement viole les principes fondamentaux de la responsabilité établis au niveau international ainsi que ceux du droit pénal international. C’est pourquoi les Tamouls continuent à se battre et à mettre leur vie en danger pour obtenir une reconnaissance par l’État sri-lankais des crimes commis et pour leur autodétermination.
+  </p>
+
+  <h2>Demandes de la diaspora tamoule au conseiller fédéral Ignazio Cassis</h2>
+
+  <p>
+    Après le Canada, l’Allemagne et la Grande-Bretagne, la Suisse est, depuis les années 80, un des principaux pays d’accueil des réfugiés tamouls venus du Sri Lanka. D’après une évaluation du Secrétariat d’État aux migrations, la diaspora tamoule en Suisse représente actuellement plus de 80&nbsp;000 personnes et s’étend à présent sur trois générations. Cette communauté fait désormais partie de la population suisse&nbsp;; elle contribue depuis plus de 40 ans, et sous différentes formes, à la vie sociale, politique, économique et culturelle de ce pays.
+  </p>  
+  
+  <p>
+    La Suisse s’engage depuis de longues années pour la promotion de la paix, la défense des droits de l’homme, la réconciliation et le processus de dialogue au Sri Lanka, notamment dans les régions du nord et de l’est, et cet engagement constitue l’un des points forts des relations que les deux pays entretiennent depuis des années.
+  </p>
+
+  <p>
+    Dans ce contexte, les soussignés et la deuxième génération de la diaspora tamoule en appellent au conseiller fédéral Ignazio Cassis afin que, dans le respect de l’action de la Suisse en faveur des droits de l’homme et de sa forte tradition humanitaire, il s’engage fermement pour que les responsabilités soient reconnues et que les Tamouls des régions du nord et de l’est du Sri Lanka soient protégés et obtiennent justice.
+  </p>
+  
+  <p>
+    Nous invitons instamment le conseiller fédéral Ignazio Cassis à se rendre, lors de sa visite au Sri&nbsp;Lanka en mars prochain, également dans les régions du nord et de l’est, qui restent les plus touchées depuis la fin de la guerre.
+  </p>
+
+  <p>Revendications concrètes:</p>
+  <ul>
+    <li>
+      Nous demandons instamment qu’une visite soit prévue dans les régions du nord et l’est du Sri Lanka afin que vous puissiez apporter symboliquement un témoignage de solidarité envers les communautés de victimes. Lors d’une visite de Jaffna, un arrêt pourrait être prévu au charnier de Chemmani. Lors d’une visite de Mullaitivu, un arrêt pourrait être prévu sur la plage de Mullivaikkal, théâtre de la dernière phase de la guerre. Lors de votre visite au nord et à l’est, vous pourriez également rencontrer des représentants des personnes disparues à la suite des violences commises durant le conflit et rendre ainsi compte de l’ampleur de la souffrance et de la détresse qui touchent encore et toujours les populations de ces régions.
+    </li>
+    <li>
+      Nous vous demandons également d’évoquer et de reconnaître, dans les discours que vous serez amenés à prononcer durant votre visite, la souffrance et la douleur de la communauté des victimes tamoules. Nous vous prions instamment d’exiger du gouvernement sri-lankais qu’il permette que des enquêtes internationales indépendantes soient réalisées et qu’un processus transparent d’obligation de rendre des comptes pour les crimes de guerre commis soit mené, notamment sous l’égide du Conseil des droits de l’homme de l’ONU et de tribunaux internationaux. La Suisse doit ainsi s’engager activement afin que l’établissement de mécanismes d’enquête indépendants soit autorisé.
+    </li>
+    <li>
+      La diaspora tamoule de Suisse doit être impliquée de façon constructive afin de soutenir, d’une part, le processus d’établissement de la vérité, la mise en place d’un mécanisme d’obligation de rendre des comptes et les procédures de justice concernant les violations des droits de l’homme et les crimes de guerre commis au Sri Lanka et, d’autre part, la recherche d’une solution politique durable reconnaissant le droit à l’autodétermination de la nation tamoule.
+    </li>
+  </ul>
+  
+  <p>
+    Au vu de ces considérations, les soussignés en appellent au conseiller fédéral Ignazio Cassis et lui demandent de mettre à profit sa prochaine visite au Sri Lanka pour soutenir et défendre les principes du droit international et des droits de l’homme et pour promouvoir une paix durable.
+  </p>  
+  
+  <p>
+    Veuillez agréer l’expression de notre haute considération.
+  </p>
+
+  <p><strong>La diaspora tamoule en Suisse et autres soutiens</strong></p>
+  </div>
+  
+  </div>
+
+<!-- ===================== -->
+<!-- english -->
 <!-- ===================== -->
 <div id="en" class="letter" lang="en">
-<h1>70 years of diplomatic relations between Switzerland and Sri Lanka <a class="anchor-link" href="#en">#</a></h1>
-<h2>Visit by Federal Councilor Ignazio Cassis to Sri Lanka (March 8–9, 2026)</h2>
-<p class="meta">Petition – 14 January 2026</p>
+<h1>70 years of diplomatic relations between switzerland and sri lanka <a class="anchor-link" href="#en">#</a></h1>
+<h2>visit by federal councilor ignazio cassis to sri lanka (march 8–9, 2026)</h2>
+<p class="meta">petition – 14 january 2026</p>
 
-<p>Dear Mr. Federal Councilor Cassis,<br>
-Dear Federal Councilors,<br>
-Dear members of the National Council and Council of States,<br>
-Dear media representatives,<br>
-Dear ladies and gentlemen,</p>
+<p>dear mr. federal councilor cassis,<br>
+dear federal councilors,<br>
+dear members of the national council and council of states,<br>
+dear media representatives,<br>
+dear ladies and gentlemen,</p>
 
-<p>In 2026, Switzerland and Sri Lanka will celebrate the 70th anniversary of their diplomatic relations, established in 1956. Since then, Switzerland has been engaged in various areas, including, peacebuilding, the promotion of human rights, and the support of reform and reconciliation processes. In 2016, Switzerland also signed a migration agreement with Sri Lanka to regulate the return of rejected asylum seekers and address irregular migration. Against this background, the announced visit of Ignazio Cassis, Federal Councilor and Head of the Federal Department of Foreign Affairs, in March 2026 (March 8–9), takes place at a politically and historically sensitive moment.</p>
+<p>in 2026, switzerland and sri lanka will celebrate the 70th anniversary of their diplomatic relations, established in 1956. since then, switzerland has been engaged in various areas, including, peacebuilding, the promotion of human rights, and the support of reform and reconciliation processes. in 2016, switzerland also signed a migration agreement with sri lanka to regulate the return of rejected asylum seekers and address irregular migration. against this background, the announced visit of ignazio cassis, federal councilor and head of the federal department of foreign affairs, in march 2026 (march 8–9), takes place at a politically and historically sensitive moment.</p>
 
-<p>Despite Switzerland's long-standing commitment, the Tamil diaspora is extremely concerned about the decades of violence, structural discrimination, and oppression perpetrated by the Sri Lankan government against the Tamil people in the north and east of the country. In 1956, the same year the bilateral relations between Switzerland and Sri Lanka were established, the first of several anti-Tamil pogroms by the Sinhalese majority population took place. The climax came in 1983 with the so-called “Black July” pogrom, shortly before the outbreak of the war, which lasted until 2009. According to the UN, at least 70,000 Tamil civilians were killed in the final phase of the war in 2009, many of them in so-called “no fire zones” that were deliberately bombed (United Nations, 2011). Attacks on hospitals, schools, and displacement camps in the northeast of the island were also documented. Civilians disappeared without trace, many were arbitrarily executed, and women were subjected to sexual violence (OHCHR 2025). The recent discovery of additional mass graves, including the site in Chemmani (June 2025), further attests to the scale of these crimes to this day. Tamil voices and human rights organizations classify these acts by the Sri Lankan government as war crimes, crimes against humanity, and genocide (PEARL, 2024). As a result, governments and political parties in Canada and other countries commemorate 18 May as “Tamil Genocide Remembrance Day.”</p>
+<p>despite switzerland's long-standing commitment, the tamil diaspora is extremely concerned about the decades of violence, structural discrimination, and oppression perpetrated by the sri lankan government against the tamil people in the north and east of the country. in 1956, the same year the bilateral relations between switzerland and sri lanka were established, the first of several anti-tamil pogroms by the sinhalese majority population took place. the climax came in 1983 with the so-called “black july” pogrom, shortly before the outbreak of the war, which lasted until 2009. according to the un, at least 70,000 tamil civilians were killed in the final phase of the war in 2009, many of them in so-called “no fire zones” that were deliberately bombed (united nations, 2011). attacks on hospitals, schools, and displacement camps in the northeast of the island were also documented. civilians disappeared without trace, many were arbitrarily executed, and women were subjected to sexual violence (ohchr 2025). the recent discovery of additional mass graves, including the site in chemmani (june 2025), further attests to the scale of these crimes to this day. tamil voices and human rights organizations classify these acts by the sri lankan government as war crimes, crimes against humanity, and genocide (pearl, 2024). as a result, governments and political parties in canada and other countries commemorate 18 may as “tamil genocide remembrance day.”</p>
 
-<p>Even after the official end of the armed conflict in 2009, the human rights situation of Tamils in the north and east of Sri Lanka has not fundamentally improved. Arbitrary arrests continue to be carried out under the repressive Prevention of Terrorism Act (PTA). Despite these findings, and notwithstanding the official end of the war in 2009, no comprehensive international accountability process has been initiated to date. The Sri Lankan government consistently refuses any independent investigation, including cooperation with the current mandate of the Office of the United Nations High Commissioner for Human Rights, which seeks to collect and preserve evidence of crimes committed in Sri Lanka for potential judicial proceedings and to make this evidence available to Member States. In doing so, the government violates fundamental principles of international accountability and international criminal law.</p>
+<p>even after the official end of the armed conflict in 2009, the human rights situation of tamils in the north and east of sri lanka has not fundamentally improved. arbitrary arrests continue to be carried out under the repressive prevention of terrorism act (pta). despite these findings, and notwithstanding the official end of the war in 2009, no comprehensive international accountability process has been initiated to date. the sri lankan government consistently refuses any independent investigation, including cooperation with the current mandate of the office of the united nations high commissioner for human rights, which seeks to collect and preserve evidence of crimes committed in sri lanka for potential judicial proceedings and to make this evidence available to member states. in doing so, the government violates fundamental principles of international accountability and international criminal law.</p>
 
-<p>Demands of the Tamil Diaspora addressed to Federal Councilor Ignazio Cassis:</p>
-<p>After Canada, Germany, and the United Kingdom, Switzerland is among the most important host countries for Tamil refugees since the 1980s. Today, according to estimates by the State Secretariat for Migration (SEM), the Tamil diaspora comprises more than 80,000 members and now extends into the third generation. This community is part of the Swiss population and continues to contribute in diverse ways to the social, political, economic, and cultural life in Switzerland.</p>
+<p>demands of the tamil diaspora addressed to federal councilor ignazio cassis:</p>
+<p>after canada, germany, and the united kingdom, switzerland is among the most important host countries for tamil refugees since the 1980s. today, according to estimates by the state secretariat for migration (sem), the tamil diaspora comprises more than 80,000 members and now extends into the third generation. this community is part of the swiss population and continues to contribute in diverse ways to the social, political, economic, and cultural life in switzerland.</p>
 
-<p>Switzerland has for many years been engaged in peacebuilding, the protection of human rights, and reconciliation and dialogue processes in Sri Lanka, particularly in the north and east of the country. This engagement constitutes a key pillar of the long-standing bilateral relations between the two countries. Against this background, the undersigned call upon Federal Councilor Ignazio Cassis to live up to Switzerland’s human rights obligations and humanitarian tradition and to continue to act decisively in support of justice, accountability, and the protection of affected Tamil communities in the north and east of Sri Lanka.</p>
+<p>switzerland has for many years been engaged in peacebuilding, the protection of human rights, and reconciliation and dialogue processes in sri lanka, particularly in the north and east of the country. this engagement constitutes a key pillar of the long-standing bilateral relations between the two countries. against this background, the undersigned call upon federal councilor ignazio cassis to live up to switzerland’s human rights obligations and humanitarian tradition and to continue to act decisively in support of justice, accountability, and the protection of affected tamil communities in the north and east of sri lanka.</p>
 
-<p>The Tamil diaspora in Switzerland, particularly members of the second generation, also calls on Federal Councilor Ignazio Cassis to visit the north and east of the country, during his visit to Sri Lanka in March 2026. These regions remain the most severely affected areas even after the end of the war.</p>
+<p>the tamil diaspora in switzerland, particularly members of the second generation, also calls on federal councilor ignazio cassis to visit the north and east of the country, during his visit to sri lanka in march 2026. these regions remain the most severely affected areas even after the end of the war.</p>
 
-<p>Concrete Demands:</p>
+<p>concrete demands:</p>
 <ul>
-  <li>We strongly request a visit to the North and East that symbolically expresses solidarity with the Tamil victim community. A visit to Jaffna may include a visit to the Chemmani mass grave. A visit to Mullaitivu preferably may include a visit to the Mullivaikkal beach, the site of the last phase of the war. A meeting with representatives of the forcibly disappeared during your visit to the North and East will help acknowledge the ongoing character of the pain and suffering.</li>
-  <li>We would strongly urge you, in your public remarks while in Sri Lanka, to acknowledge the suffering and pain of the Tamil victim community. We urge you to call upon the Sri Lankan government to allow independent international investigations and a transparent accountability process for crimes during and after the war, including through the United Nations Human Rights Council or international judicial mechanisms. Switzerland should actively advocate for the admission of independent international investigative mechanisms.</li>
-  <li>To constructively engage the Tamil diaspora in Switzerland in order to support processes of truth-seeking, accountability, and justice in relation to human rights violations and crimes during and after the war in Sri Lanka and in the search for a permanent political solution to the Tamil National Question that acknowledges the right to self-determination of the Tamil nation.</li>
+  <li>we strongly request a visit to the north and east that symbolically expresses solidarity with the tamil victim community. a visit to jaffna may include a visit to the chemmani mass grave. a visit to mullaitivu preferably may include a visit to the mullivaikkal beach, the site of the last phase of the war. a meeting with representatives of the forcibly disappeared during your visit to the north and east will help acknowledge the ongoing character of the pain and suffering.</li>
+  <li>we would strongly urge you, in your public remarks while in sri lanka, to acknowledge the suffering and pain of the tamil victim community. we urge you to call upon the sri lankan government to allow independent international investigations and a transparent accountability process for crimes during and after the war, including through the united nations human rights council or international judicial mechanisms. switzerland should actively advocate for the admission of independent international investigative mechanisms.</li>
+  <li>to constructively engage the tamil diaspora in switzerland in order to support processes of truth-seeking, accountability, and justice in relation to human rights violations and crimes during and after the war in sri lanka and in the search for a permanent political solution to the tamil national question that acknowledges the right to self-determination of the tamil nation.</li>
 </ul>
 
-<p>Against this background, the undersigned call on Federal Councilor Ignazio Cassis to actively use the forthcoming visit to Sri Lanka to consistently uphold the principles of international law, human rights, and sustainable peacebuilding.</p>
+<p>against this background, the undersigned call on federal councilor ignazio cassis to actively use the forthcoming visit to sri lanka to consistently uphold the principles of international law, human rights, and sustainable peacebuilding.</p>
 
-<p><strong>Yours sincerely</strong></p>
+<p><strong>yours sincerely</strong></p>
 </div>
 
 </div>
 
 <!-- ===================== -->
-<!-- Tamil -->
+<!-- tamil -->
 <!-- ===================== -->
 <div id="ta" class="letter" lang="ta">
 <h1>சுவிற்சர்லாந்து – இலங்கை 70 ஆண்டுகாலத் தூதரக உறவுகள் <a class="anchor-link" href="#ta">#</a></h1>
@@ -278,12 +349,12 @@ Dear ladies and gentlemen,</p>
 
 <p>1956 ஆம் ஆண்டில் தொடங்கப்பட்ட சுவிற்சர்லாந்து இலங்கை தூதரக உறவுகள் 2026 ஆம் ஆண்டில் 70 ஆண்டுகளை நிறைவு செய்கின்றன. அன்றுமுதல் இன்றுவரை சுவிற்சர்லாந்து அமைதி மேம்பாடு, மாந்தர் உரிமைகள், சீர்திருத்தங்கள் மற்றும் நல்லிணக்க செயல்முறைகளுக்கான நல்லாதரவு போன்ற பல துறைகளில் இலங்கையில் ஈடுபட்டு வருகிறது. 2016 ஆம் ஆண்டில் நிராகரிக்கப்பட்ட அகதிகளின் மீள்வருகை மற்றும் சட்டவிரோத இடப்பெயர்வை ஒழுங்குபடுத்தும் நோக்கில் சுவிற்சர்லாந்து இலங்கையுடன் ஒரு இடப்பெயர்வு ஒப்பந்தத்தையும் கையெழுத்திட்டுள்ளது. இந்தச் சூழலில் சுவிற்சர்லாந்து கூட்டாட்சி வெளிநாட்டு அலுவற் துறையின் தலைவர் மாண்புமிகு திருநிறை. இக்னாசியோ காசிஸ் அவர்களின் 2026 மார்ச் மாத இலங்கை சுற்றுப் பயணம் (8–9 பங்குனி 2026) மேற்கொள்ள உள்ளது உறுதிப்படுத்தப்பட்டுள்ளது. இச் செயல் அரசியல் மற்றும் வரலாற்றுரீதியாக மிக முக்கியமான நுணுக்கமான காலகட்டத்தில் நடைபெறுகின்றது.</p>
 
-<p>1956 ஆம் ஆண்டில், சுவிட்சர்லாந்துக்கும் இலங்கைக்கும் இடையிலான இருதரப்பு உறவுகள் நிறுவப்பட்ட அதே ஆண்டில், சிங்கள பெரும்பான்மை மக்களால் பல தமிழர்களுக்கு எதிரான படுகொலைகளில் முதலாவது நடந்தது. 2009 வரை நீடித்த போர் வெடிப்பதற்கு சற்று முன்பு, 1983 ஆம் ஆண்டில் "கறுப்பு ஜூலை" படுகொலையுடன் உச்சக்கட்டம் ஏற்பட்டது. ஐ.நா.வின் கூற்றுப்படி, 2009 ஆம் ஆண்டு போரின் இறுதிக் கட்டத்தில் குறைந்தது 70,000 தமிழ் பொதுமக்கள் கொல்லப்பட்டனர்; அவர்களில் பலர் “பாதுகாப்பு வலையத்திற்குள் (துப்பாக்கிச் சூடு இல்லா பகுதிகள்)” என அரசால் அறிவிக்கப்பட்ட இடங்களில் குறிவைத்து குண்டுவீச்சுக்கு உள்ளானவர்கள் (ஐ.நா அறிக்கை,2011). வடகிழக்கு பகுதிகளில் மருத்துவமனைகள், பள்ளிகள், அகதி முகாம்கள் மீது தாக்குதல்கள் நடைபெற்றதாகவும் ஆவணப்படுத்தப்பட்டுள்ளது. பல பொதுமக்கள் காணாமல் ஆக்கப்பட்டுள்ளனர், பலர் அரசபடைகளால் தன்னிச்சையாக தூக்கிலிடப்பட்டனர், பாலியல் வன்முறைக்கும் இரையாகினர் (Human Rights Watch,  2010). சமீபத்தில் கண்டுபிடிக்கப்பட்ட செம்மணி போன்ற (யூன் 2025) கூடுதல் மனிதப்பெருங்குழிகள், இந்தக் குற்றங்களின் பருமனை மேலும் உறுதிப்படுத்துகின்றன. தமிழ் குரல்கள் மற்றும் மனித உரிமை அமைப்புகள் இலங்கை அரசின் குற்றங்கள் போர் குற்றங்களாகவும், மனிதகுலத்திற்கு எதிரான பேரிடராகவும், இனப்படுகொலையாவும் வகைப்படுத்தி உள்ளன (PEARL, 2024). இதன் காரணமாக கனடா உள்ளிட்ட சில நாடுகளில் மே 18 ஆம் திகதி “தமிழ் இனப்படுகொலை நினைவு நாள் (Tamil Genocide Remembrance Day)” என அறிவுத்துள்ளன. இலங்கை அரசு இன்றுவரை பன்னாட்டு விசாரணைகளை மறுத்துவருவதுடன் தமிழ் பகுதிகளில் தொடர்ச்சியான “சிங்களமயமாக்கல்” நடவடிக்கைகளையும் முன்னெடுத்து வருகின்றது (PEARL 2026).</p>
+<p>1956 ஆம் ஆண்டில், சுவிட்சர்லாந்துக்கும் இலங்கைக்கும் இடையிலான இருதரப்பு உறவுகள் நிறுவப்பட்ட அதே ஆண்டில், சிங்கள பெரும்பான்மை மக்களால் பல தமிழர்களுக்கு எதிரான படுகொலைகளில் முதலாவது நடந்தது. 2009 வரை நீடித்த போர் வெடிப்பதற்கு சற்று முன்பு, 1983 ஆம் ஆண்டில் "கறுப்பு ஜூலை" படுகொலையுடன் உச்சக்கட்டம் ஏற்பட்டது. ஐ.நா.வின் கூற்றுப்படி, 2009 ஆம் ஆண்டு போரின் இறுதிக் கட்டத்தில் குறைந்தது 70,000 தமிழ் பொதுமக்கள் கொல்லப்பட்டனர்; அவர்களில் பலர் “பாதுகாப்பு வலையத்திற்குள் (துப்பாக்கிச் சூடு இல்லா பகுதிகள்)” என அரசால் அறிவிக்கப்பட்ட இடங்களில் குறிவைத்து குண்டுவீச்சுக்கு உள்ளானவர்கள் (ஐ.நா அறிக்கை,2011). வடகிழக்கு பகுதிகளில் மருத்துவமனைகள், பள்ளிகள், அகதி முகாம்கள் மீது தாக்குதல்கள் நடைபெற்றதாகவும் ஆவணப்படுத்தப்பட்டுள்ளது. பல பொதுமக்கள் காணாமல் ஆக்கப்பட்டுள்ளனர், பலர் அரசபடைகளால் தன்னிச்சையாக தூக்கிலிடப்பட்டனர், பாலியல் வன்முறைக்கும் இரையாகினர் (human rights watch,  2010). சமீபத்தில் கண்டுபிடிக்கப்பட்ட செம்மணி போன்ற (யூன் 2025) கூடுதல் மனிதப்பெருங்குழிகள், இந்தக் குற்றங்களின் பருமனை மேலும் உறுதிப்படுத்துகின்றன. தமிழ் குரல்கள் மற்றும் மனித உரிமை அமைப்புகள் இலங்கை அரசின் குற்றங்கள் போர் குற்றங்களாகவும், மனிதகுலத்திற்கு எதிரான பேரிடராகவும், இனப்படுகொலையாவும் வகைப்படுத்தி உள்ளன (pearl, 2024). இதன் காரணமாக கனடா உள்ளிட்ட சில நாடுகளில் மே 18 ஆம் திகதி “தமிழ் இனப்படுகொலை நினைவு நாள் (tamil genocide remembrance day)” என அறிவுத்துள்ளன. இலங்கை அரசு இன்றுவரை பன்னாட்டு விசாரணைகளை மறுத்துவருவதுடன் தமிழ் பகுதிகளில் தொடர்ச்சியான “சிங்களமயமாக்கல்” நடவடிக்கைகளையும் முன்னெடுத்து வருகின்றது (pearl 2026).</p>
 
-<p>2009 ஆம் ஆண்டு போர் மௌனிக்கப்பட்டதாக, முடிவடைந்ததாக அறிவிக்கப்பட்ட பின்னரும் இலங்கையின் வடக்கு மற்றும் கிழக்குப் பகுதிகளில் வாழும் தமிழர்களின் மனித உரிமை நிலைமை அடிப்படையில் இன்றுவரை மேம்படவில்லை. கடுமையான “பயங்கரவாதத் தடுப்பு சட்டம்” (PTA) கீழ் தன்னிச்சையான கைது நடவடிக்கைகள் தொடர்ந்தும் இடம்பெறுகின்றன. இருந்தும் இதுவரை எந்த முழுமையான பன்னாட்டு விசாரணையோ அல்லது பிற ஆய்வுச்செயலாக்கமோ தொடங்கப்படவில்லை. ஐ.நா. மனித உரிமைகள் உயர் ஆணையத்தின் தற்போதைய பணிக்கட்டளை உள்ளிட்ட இலங்கையில் நடைபெற்ற குற்றங்களுக்கான ஆதாரங்களை சேகரித்து, எதிர்கால நீதிமன்ற நடவடிக்கைகளுக்காக உறுப்பு நாடுகளுக்கு வழங்கும் முயற்சிகளையும் இலங்கை அரசு தொடர்ந்து மறுதலித்து வருகிறது. இதன் மூலம் பன்னாட்டுப் பொறுப்புணர்வு மற்றும் பன்னாட்டுக் குற்றவியல் சட்டத்தின் அடிப்படை கொள்கைகள் மீறப்படுகின்றன.</p>
+<p>2009 ஆம் ஆண்டு போர் மௌனிக்கப்பட்டதாக, முடிவடைந்ததாக அறிவிக்கப்பட்ட பின்னரும் இலங்கையின் வடக்கு மற்றும் கிழக்குப் பகுதிகளில் வாழும் தமிழர்களின் மனித உரிமை நிலைமை அடிப்படையில் இன்றுவரை மேம்படவில்லை. கடுமையான “பயங்கரவாதத் தடுப்பு சட்டம்” (pta) கீழ் தன்னிச்சையான கைது நடவடிக்கைகள் தொடர்ந்தும் இடம்பெறுகின்றன. இருந்தும் இதுவரை எந்த முழுமையான பன்னாட்டு விசாரணையோ அல்லது பிற ஆய்வுச்செயலாக்கமோ தொடங்கப்படவில்லை. ஐ.நா. மனித உரிமைகள் உயர் ஆணையத்தின் தற்போதைய பணிக்கட்டளை உள்ளிட்ட இலங்கையில் நடைபெற்ற குற்றங்களுக்கான ஆதாரங்களை சேகரித்து, எதிர்கால நீதிமன்ற நடவடிக்கைகளுக்காக உறுப்பு நாடுகளுக்கு வழங்கும் முயற்சிகளையும் இலங்கை அரசு தொடர்ந்து மறுதலித்து வருகிறது. இதன் மூலம் பன்னாட்டுப் பொறுப்புணர்வு மற்றும் பன்னாட்டுக் குற்றவியல் சட்டத்தின் அடிப்படை கொள்கைகள் மீறப்படுகின்றன.</p>
 
 <p>அமைச்சர் திருநிறை. இக்னாசியோ காசிஸ் அவர்களிடம் சுவிற்சர்லாந்திலுள்ள தமிழ் புலம்பெயர் சமூகத்தின் கோரிக்கை:</p>
-<p>கனடா, ஜெர்மனி, ஐக்கிய இராச்சியம் ஆகிய நாடுகளுக்குப் அடுத்து சுவிற்சர்லாந்து 1980 ஆம் ஆண்டிலிருந்து தமிழ் ஏதிலிகளை அதிகமாக ஏற்றுக் கொண்ட முக்கிய நாடுகளில் ஒன்றாகும். சுவிற்சர்லாந்து குடியேற்ற செயலகத்தின் (State Secretariat for Migration) மதிப்பீடுகளின்படி இன்று சுவிற்சர்லாந்திலுள்ள தமிழ் புலம்பெயர் சமூகத்தில் 80’000 இற்கும் மேற்பட்டோர் உள்ளனர். இத் தமிழ்ச்சமூகம் தற்போது மூன்றாம் தலைமுறையையும் உள்ளடக்கியதாக வளர்ந்துள்ளது. இந்தச் சமூகமானது சுவிட்சர்லாந்து மக்கள் தொகையில் ஒரு பகுதியாகும், சமூக அரசியல் பொருளாதார மற்றும் பண்பாட்டு துறைகளில் தொடர்ந்து முக்கிய பங்களிப்புகளை வழங்கி வருகிறது.</p>
+<p>கனடா, ஜெர்மனி, ஐக்கிய இராச்சியம் ஆகிய நாடுகளுக்குப் அடுத்து சுவிற்சர்லாந்து 1980 ஆம் ஆண்டிலிருந்து தமிழ் ஏதிலிகளை அதிகமாக ஏற்றுக் கொண்ட முக்கிய நாடுகளில் ஒன்றாகும். சுவிற்சர்லாந்து குடியேற்ற செயலகத்தின் (state secretariat for migration) மதிப்பீடுகளின்படி இன்று சுவிற்சர்லாந்திலுள்ள தமிழ் புலம்பெயர் சமூகத்தில் 80’000 இற்கும் மேற்பட்டோர் உள்ளனர். இத் தமிழ்ச்சமூகம் தற்போது மூன்றாம் தலைமுறையையும் உள்ளடக்கியதாக வளர்ந்துள்ளது. இந்தச் சமூகமானது சுவிட்சர்லாந்து மக்கள் தொகையில் ஒரு பகுதியாகும், சமூக அரசியல் பொருளாதார மற்றும் பண்பாட்டு துறைகளில் தொடர்ந்து முக்கிய பங்களிப்புகளை வழங்கி வருகிறது.</p>
 
 <p>இலங்கையின் வடக்கு மற்றும் கிழக்குப் பகுதிகளில் அமைதி மேம்பாடு, மனித உரிமை பாதுகாப்பு, நல்லிணக்கம் மற்றும் உரையாடல் செயல்முறைகளில் சுவிற்சர்லாந்து பல ஆண்டுகளாகச் செயற்பட்டு வருகிறது. இது இரு நாடுகளுக்கிடையேயான நீண்டகால இருதரப்பு உறவுகளின் மையக்கூறாகவும் விளங்குகின்றது. இச்சூழலில் மனித உரிமை பொறுப்பையும், மனிதாபிமான பாரம்பரியத்தையும் மதித்து, இலங்கையின் வடக்கு மற்றும் கிழக்கில் பாதிக்கப்பட்டுள்ள தமிழர்களுக்கான நீதி, பொறுப்புணர்வு மற்றும் பாதுகாப்பை உறுதிப்படுத்துவதில் சுவிற்சர்லாந்து தொடர்ந்து உறுதியான நிலைப்பாட்டை எடுத்துக்கொள்ள வேண்டும் என, இவ் வேண்டுகை (மனுவில்) கையெழுத்திட்டுள்ளோர் வலியுறுத்துகின்றனர்.</p>
 
@@ -303,17 +374,17 @@ Dear ladies and gentlemen,</p>
 </div>
 
 <!-- ===================== -->
-<!-- Contact Section -->
+<!-- contact section -->
 <!-- ===================== -->
 <hr />
 <section id="contact">
-  <h2>Kontakt / Contact / தொடர்பு/ Contatto / සම්බන්ධතා </h2>
-  <p><strong>E-Mail:</strong> <a href="mailto:info@tamildiasporaschweiz.ch">info@tamildiasporaschweiz.ch</a></p>
-  <p><strong>Telefon:</strong> <a href="tel:+41315080391">+41 31 508 03 91</a></p>
+  <h2>kontakt / contact / தொடர்பு/ contatto / සම්බන්ධතා </h2>
+  <p><strong>e-mail:</strong> <a href="mailto:info@tamildiasporaschweiz.ch">info@tamildiasporaschweiz.ch</a></p>
+  <p><strong>telefon:</strong> <a href="tel:+41315080391">+41 31 508 03 91</a></p>
 </section>
 
-<!-- Floating Print Button -->
-<button id="print-btn" onclick="printActive()">Print PDF</button>
+<!-- floating print button -->
+<button id="print-btn" onclick="print_active()">print pdf</button>
 
 </body>
 </html>
