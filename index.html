@@ -129,32 +129,32 @@
   </style>
 
   <script>
-    function show_lang(lang) {
-      document.query_selector_all('.letter').for_each(el => {
-        el.class_list.remove('active');
+    function showLang(lang) {
+      document.querySelectorAll('.letter').forEach(el => {
+        el.classList.remove('active');
       });
-      const section = document.get_element_by_id(lang);
-      section.class_list.add('active');
-      document.document_element.lang = lang;
-      section.scroll_into_view({ behavior: 'smooth' });
+      const section = document.getElementById(lang);
+      section.classList.add('active');
+      document.documentElement.lang = lang;
+      section.scrollIntoView({ behavior: 'smooth' });
     }
 
-    window.add_event_listener('dom_content_loaded', () => {
-      const hash_lang = window.location.hash.replace('#', '');
-      if (['de', 'fr', 'en', 'ta'].includes(hash_lang)) {
-        show_lang(hash_lang);
+    window.addEventListener('DOMContentLoaded', () => {
+      const hashLang = window.location.hash.replace('#', '');
+      if (['de', 'fr', 'en', 'ta'].includes(hashLang)) {
+        showLang(hashLang);
       }
     });
 
-    function print_active() {
-      const active = document.query_selector('.letter.active');
+    function printActive() {
+      const active = document.querySelector('.letter.active');
       if (!active) return;
-      const print_contents = active.inner_html;
-      const original_contents = document.body.inner_html;
+      const printContents = active.innerHTML;
+      const originalContents = document.body.innerHTML;
 
-      document.body.inner_html = print_contents;
+      document.body.innerHTML = printContents;
       window.print();
-      document.body.inner_html = original_contents;
+      document.body.innerHTML = originalContents;
       location.reload();
     }
   </script>
@@ -163,10 +163,10 @@
 
 <!-- language switcher -->
 <div class="lang-switch">
-  <button onclick="show_lang('de')">deutsch</button>
-  <button onclick="show_lang('fr')">française</button>
-  <button onclick="show_lang('en')">english</button>
-  <button onclick="show_lang('ta')">தமிழ்</button>
+  <button onclick="showLang('de')">deutsch</button>
+  <button onclick="showLang('fr')">française</button>
+  <button onclick="showLang('en')">english</button>
+  <button onclick="showLang('ta')">தமிழ்</button>
 </div>
 
 <!-- petition button -->
