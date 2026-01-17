@@ -160,18 +160,18 @@
 
     // Auto-redirect based on subdomain
     const hostname = window.location.hostname;
-    if (hostname === "petition-deutsch.tamildiasporaschweiz.ch") {
-      window.location.hash = "#de";
-    } else if (hostname === "petition-francaise.tamildiasporaschweiz.ch") {
-      window.location.hash = "#fr";
-    } else if (hostname === "petition-italiano.tamildiasporaschweiz.ch") {
-      window.location.hash = "#it";
-    } else if (hostname === "petition-english.tamildiasporaschweiz.ch") {
-      window.location.hash = "#en";
-    } else if (hostname === "petition-tamil.tamildiasporaschweiz.ch") {
-      window.location.hash = "#ta";
-    } else if (hostname === "petition-sinhala.tamildiasporaschweiz.ch") {
-      window.location.hash = "#si";
+    if (hostname.includes("petition-deutsch")) {
+      window.location.replace("https://ch-sl-70-years.tamildiasporaschweiz.ch/#de");
+    } else if (hostname.includes("petition-francaise")) {
+      window.location.replace("https://ch-sl-70-years.tamildiasporaschweiz.ch/#fr");
+    } else if (hostname.includes("petition-italiano")) {
+      window.location.replace("https://ch-sl-70-years.tamildiasporaschweiz.ch/#it");
+    } else if (hostname.includes("petition-english")) {
+      window.location.replace("https://ch-sl-70-years.tamildiasporaschweiz.ch/#en");
+    } else if (hostname.includes("petition-tamil")) {
+      window.location.replace("https://ch-sl-70-years.tamildiasporaschweiz.ch/#ta");
+    } else if (hostname.includes("petition-sinhala")) {
+      window.location.replace("https://ch-sl-70-years.tamildiasporaschweiz.ch/#si");
     }
   </script>
 </head>
